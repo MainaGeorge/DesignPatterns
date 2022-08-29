@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.Prototype\DesignPatterns.Prototype.csproj" />
     <ProjectReference Include="..\DesignPatterns.Singleton\DesignPatterns.Singleton.csproj" />
   </ItemGroup>
 
