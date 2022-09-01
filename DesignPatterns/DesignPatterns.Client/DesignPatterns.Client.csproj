@@ -1,14 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DesignPatterns.Singleton\DesignPatterns.Singleton.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.Builder.csproj" />
+		<ProjectReference Include="..\DesignPatterns.Momento\DesignPatterns.Momento.csproj" />
+		<ProjectReference Include="..\DesignPatterns.Prototype\DesignPatterns.Prototype.csproj" />
+		<ProjectReference Include="..\DesignPatterns.Singleton\DesignPatterns.Singleton.csproj" />
+	</ItemGroup>
 
 </Project>
