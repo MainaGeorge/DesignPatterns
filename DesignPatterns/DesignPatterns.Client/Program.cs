@@ -1,21 +1,24 @@
-﻿using DesignPatterns.Momento;
+﻿using DesignPatterns.Iterator;
 
 namespace DesignPatterns.Client
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            var editor = new Editor("html basics", "paragraphs");
-            var history = new StateHistory<EditorState>();
-            history.PushState(editor.SetState());
+            var linkedListHistory = new BrowserHistoryLinkedList();
+            var iterator = linkedListHistory.GetIterator();
+            linkedListHistory.Push("facebook");
+            linkedListHistory.Push("linked");
+            linkedListHistory.Push("pirates");
 
-            editor.Content = "links and images";
+            //var iterator = linkedListHistory.GetIterator();
 
-            Console.WriteLine($"current state of the editor: Title:{editor.Title} and Content:{editor.Content} ");
-
-            editor.UndoChanges(history.PopState());
-            Console.WriteLine($"current state of the editor: Title:{editor.Title} and Content:{editor.Content} ");
+            while (iterator.HasNext())
+            {
+                Console.WriteLine(iterator.Current());
+                iterator.MoveNext();
+            }
         }
     }
 }

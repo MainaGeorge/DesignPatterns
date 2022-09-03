@@ -9,6 +9,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.Builder.csproj" />
+		<ProjectReference Include="..\DesignPatterns.Iterator\DesignPatterns.Iterator.csproj" />
 		<ProjectReference Include="..\DesignPatterns.Momento\DesignPatterns.Momento.csproj" />
 		<ProjectReference Include="..\DesignPatterns.Prototype\DesignPatterns.Prototype.csproj" />
 		<ProjectReference Include="..\DesignPatterns.Singleton\DesignPatterns.Singleton.csproj" />

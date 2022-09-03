@@ -15,23 +15,21 @@ public class BrowserHistoryList
         return lastItem;
     }
 
-    public BrowserHistoryIterator GetIterator() => new(this);
+    public BrowserHistoryListIterator GetIterator() => new(this);
 
-    public class BrowserHistoryIterator : IIterator<string>
+    public class BrowserHistoryListIterator : IIterator<string>
     {
         private int _index = 0;
         private readonly BrowserHistoryList _historyList;
 
-        public BrowserHistoryIterator(BrowserHistoryList historyList)
+        public BrowserHistoryListIterator(BrowserHistoryList historyList)
         {
             _historyList = historyList;
         }
         public string Current() => _historyList._visitedUrls[_index];
 
-
         public void MoveNext() => _index++;
-            
-
+        
         public bool HasNext() => _index < _historyList._visitedUrls.Count;
 
     }
