@@ -29,6 +29,7 @@
     <ProjectReference Include="..\DesignPatterns.Singleton\DesignPatterns.Singleton.csproj" />
     <ProjectReference Include="..\DesignPatterns.State\DesignPatterns.State.csproj" />
     <ProjectReference Include="..\DesignPatterns.Strategy\DesignPatterns.Strategy.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Template\DesignPatterns.Template.csproj" />
   </ItemGroup>
 
 </Project>
