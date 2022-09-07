@@ -23,7 +23,7 @@ public class ChatRoomMember : IColleague
         _mediator.SendMessage(this, message);
     }
 
-    public string LastMessage => _messageHistory.Pop();
+    public string LastMessage => _messageHistory.Peek();
 }
 
 public interface IColleague
