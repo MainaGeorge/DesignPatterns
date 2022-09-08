@@ -29,7 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Observer", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{044F97C6-18C6-43D8-9918-FEA628A75BEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Mediator", "DesignPatterns.Mediator\DesignPatterns.Mediator.csproj", "{C57E526A-8F76-442A-96CA-3787704EC53A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Mediator", "DesignPatterns.Mediator\DesignPatterns.Mediator.csproj", "{C57E526A-8F76-442A-96CA-3787704EC53A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Visitor", "DesignPatterns.Visitor\DesignPatterns.Visitor.csproj", "{44DB43AC-8908-418B-AC6D-CE1CCF1EBA70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.ChainOfResponsibility", "DesignPatterns.ChainOfResponsibility\DesignPatterns.ChainOfResponsibility.csproj", "{0F4F35BC-4580-465A-A8E3-E223202F00DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +93,14 @@ Global
 		{C57E526A-8F76-442A-96CA-3787704EC53A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C57E526A-8F76-442A-96CA-3787704EC53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C57E526A-8F76-442A-96CA-3787704EC53A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44DB43AC-8908-418B-AC6D-CE1CCF1EBA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44DB43AC-8908-418B-AC6D-CE1CCF1EBA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44DB43AC-8908-418B-AC6D-CE1CCF1EBA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44DB43AC-8908-418B-AC6D-CE1CCF1EBA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4F35BC-4580-465A-A8E3-E223202F00DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4F35BC-4580-465A-A8E3-E223202F00DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4F35BC-4580-465A-A8E3-E223202F00DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4F35BC-4580-465A-A8E3-E223202F00DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +118,8 @@ Global
 		{D4680C91-968A-46A1-BEF1-79D9098F52D5} = {044F97C6-18C6-43D8-9918-FEA628A75BEA}
 		{70992BDA-28C0-45E4-8269-8A393F64B1A2} = {044F97C6-18C6-43D8-9918-FEA628A75BEA}
 		{C57E526A-8F76-442A-96CA-3787704EC53A} = {044F97C6-18C6-43D8-9918-FEA628A75BEA}
+		{44DB43AC-8908-418B-AC6D-CE1CCF1EBA70} = {044F97C6-18C6-43D8-9918-FEA628A75BEA}
+		{0F4F35BC-4580-465A-A8E3-E223202F00DA} = {044F97C6-18C6-43D8-9918-FEA628A75BEA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {767FF449-E4D0-40EF-9D6C-1D82E8510BE9}
