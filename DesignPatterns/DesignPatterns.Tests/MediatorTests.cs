@@ -8,11 +8,11 @@ namespace DesignPatterns.Tests
         public void Mediator_SetUpWorksCorrectly()
         {
             var chatRoom = new FaceBookChatRoom("facebook chat");
-            var james = new ChatRoomMember(chatRoom, "James");
-            var john = new ChatRoomMember(chatRoom, "John");
-            var joy = new ChatRoomMember(chatRoom, "Joy");
+            var james = new LivingRoomChatRoomMember(chatRoom, "James");
+            var john = new KitchenChatRoomMember(chatRoom, "John");
+            var joy = new LivingRoomChatRoomMember(chatRoom, "Joy");
 
-            const string message = "hello there from member 1";
+            const string message = "hello there from roomMember 1";
             james.SendMessage(message);
 
             Assert.Equal(1, joy.NumberOfReceivedMessages);
@@ -22,6 +22,21 @@ namespace DesignPatterns.Tests
             Assert.Equal(0, james.NumberOfReceivedMessages);
 
             Assert.True(joy.LastMessage.Equals(message));
+        }
+
+        [Fact]
+        public void Mediator_CanSend_RestrictedMessages()
+        {
+            var chatRoom = new FaceBookChatRoom("facebook chat");
+            var james = new LivingRoomChatRoomMember(chatRoom, "James");
+            var john = new KitchenChatRoomMember(chatRoom, "John");
+            var kim = new KitchenChatRoomMember(chatRoom, "Kim");
+
+            const string message = "hello from the kitchen";
+            kim.SendMessage<LivingRoomChatRoomMember>(message);
+            Assert.True(james.LastMessage.Equals(message));
+            Assert.Equal(0, john.NumberOfReceivedMessages);
+            Assert.Equal(1, james.NumberOfReceivedMessages);
         }
     }
 }

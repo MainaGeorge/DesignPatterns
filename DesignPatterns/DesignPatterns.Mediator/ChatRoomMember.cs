@@ -1,13 +1,13 @@
 ﻿namespace DesignPatterns.Mediator;
 
-public abstract class ChatMember 
+public abstract class ChatRoomMember 
 {
     protected string Name { get; set; }
     private readonly ChatRoom _chatRoom;
     private readonly Stack<string> _messageHistory = new();
     public int NumberOfReceivedMessages => _messageHistory.Count;
 
-    protected ChatMember(ChatRoom chatRoom, string name)
+    protected ChatRoomMember(ChatRoom chatRoom, string name)
     {
         Name = name;
         _chatRoom = chatRoom;
@@ -25,12 +25,24 @@ public abstract class ChatMember
         _chatRoom.SendMessage(this, message);
     }
 
+    public void SendMessage<T>(string message) where T : ChatRoomMember
+    {
+        _chatRoom.SendMessage<T>(message);
+    }
+
     public string LastMessage => _messageHistory.Peek();
 }
 
-public class ChatRoomMember : ChatMember
+public class LivingRoomChatRoomMember : ChatRoomMember
 {
-    public ChatRoomMember(ChatRoom chatRoom, string name) : base(chatRoom, name)
+    public LivingRoomChatRoomMember(ChatRoom chatRoom, string name) : base(chatRoom, name)
+    {
+    }
+}
+
+public class KitchenChatRoomMember : ChatRoomMember
+{
+    public KitchenChatRoomMember(ChatRoom chatRoom, string name) : base(chatRoom, name)
     {
     }
 }

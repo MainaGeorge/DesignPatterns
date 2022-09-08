@@ -3,10 +3,10 @@
     public abstract class ChatRoom
     {
         protected string Name { get; private set; }
-        protected readonly List<ChatMember> ChatRoomMembers = new();
-        public void SendMessage(ChatMember member, string message)
+        protected readonly List<ChatRoomMember> ChatRoomMembers = new();
+        public void SendMessage(ChatRoomMember roomMember, string message)
         {
-            foreach (var m in ChatRoomMembers.Where(m => m != member))
+            foreach (var m in ChatRoomMembers.Where(m => m != roomMember))
                 m.ReceiveMessage(message);
         }
 
@@ -14,9 +14,16 @@
         {
             Name = name;
         }
-        public void AddMember(ChatMember member)
+        public void AddMember(ChatRoomMember roomMember)
         {
-            ChatRoomMembers.Add(member);
+            ChatRoomMembers.Add(roomMember);
+        }
+
+        public void SendMessage<T>(string message) where T : ChatRoomMember
+        {
+            ChatRoomMembers.OfType<T>()
+                .ToList()
+                .ForEach(m => m.ReceiveMessage(message));
         }
     }
 }
