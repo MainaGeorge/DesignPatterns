@@ -1,23 +1,22 @@
 ﻿namespace DesignPatterns.Mediator
 {
-    public class ChatRoom : IMediator
+    public abstract class ChatRoom
     {
-        protected readonly List<IColleague> ChatRoomMembers = new();
-        public void SendMessage(IColleague member, string message)
+        protected string Name { get; private set; }
+        protected readonly List<ChatMember> ChatRoomMembers = new();
+        public void SendMessage(ChatMember member, string message)
         {
             foreach (var m in ChatRoomMembers.Where(m => m != member))
                 m.ReceiveMessage(message);
         }
 
-        public void AddColleague(IColleague colleague)
+        protected ChatRoom(string name)
         {
-            ChatRoomMembers.Add(colleague);
+            Name = name;
         }
-    }
-
-    public interface IMediator
-    {
-        void SendMessage(IColleague colleague, string message);
-        void AddColleague(IColleague colleague);
+        public void AddMember(ChatMember member)
+        {
+            ChatRoomMembers.Add(member);
+        }
     }
 }
