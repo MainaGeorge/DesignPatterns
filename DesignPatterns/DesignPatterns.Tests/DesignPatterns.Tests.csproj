@@ -32,6 +32,7 @@
     <ProjectReference Include="..\DesignPatterns.State\DesignPatterns.State.csproj" />
     <ProjectReference Include="..\DesignPatterns.Strategy\DesignPatterns.Strategy.csproj" />
     <ProjectReference Include="..\DesignPatterns.Template\DesignPatterns.Template.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Visitor\DesignPatterns.Visitor.csproj" />
   </ItemGroup>
 
 </Project>
