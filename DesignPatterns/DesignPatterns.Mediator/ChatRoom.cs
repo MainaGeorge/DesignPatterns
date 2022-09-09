@@ -2,7 +2,7 @@
 {
     public abstract class ChatRoom
     {
-        protected string Name { get; private set; }
+        protected string Name { get; }
         protected readonly List<ChatRoomMember> ChatRoomMembers = new();
         public void SendMessage(ChatRoomMember roomMember, string message)
         {
