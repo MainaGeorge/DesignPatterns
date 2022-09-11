@@ -11,6 +11,7 @@ namespace DesignPatterns.Tests
             // provides common interface to perform complex operations as a single uniform operation
             IFacade facade = new FacadeService();
 
+
             var data = facade.ReadData("admin", "password1", "connectionString");
             Assert.Equal(expectedData, data);
 
