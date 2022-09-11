@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace DesignPatterns.Decorator;
+﻿namespace DesignPatterns.Decorator;
 
 public class ProductCostCalculator : ICalculateCost
 {
