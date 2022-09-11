@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.Adapter\DesignPatterns.Adapter.csproj" />
     <ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.Builder.csproj" />
     <ProjectReference Include="..\DesignPatterns.ChainOfResponsibility\DesignPatterns.ChainOfResponsibility.csproj" />
     <ProjectReference Include="..\DesignPatterns.Command\DesignPatterns.Command.csproj" />
