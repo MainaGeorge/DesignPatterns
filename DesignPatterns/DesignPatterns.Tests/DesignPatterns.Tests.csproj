@@ -26,6 +26,7 @@
     <ProjectReference Include="..\DesignPatterns.ChainOfResponsibility\DesignPatterns.ChainOfResponsibility.csproj" />
     <ProjectReference Include="..\DesignPatterns.Command\DesignPatterns.Command.csproj" />
     <ProjectReference Include="..\DesignPatterns.Composite\DesignPatterns.Composite.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Decorator\DesignPatterns.Decorator.csproj" />
     <ProjectReference Include="..\DesignPatterns.Iterator\DesignPatterns.Iterator.csproj" />
     <ProjectReference Include="..\DesignPatterns.Mediator\DesignPatterns.Mediator.csproj" />
     <ProjectReference Include="..\DesignPatterns.Momento\DesignPatterns.Momento.csproj" />
