@@ -36,6 +36,7 @@
     <ProjectReference Include="..\DesignPatterns.Momento\DesignPatterns.Momento.csproj" />
     <ProjectReference Include="..\DesignPatterns.Observer\DesignPatterns.Observer.csproj" />
     <ProjectReference Include="..\DesignPatterns.Prototype\DesignPatterns.Prototype.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Proxy\DesignPatterns.Proxy.csproj" />
     <ProjectReference Include="..\DesignPatterns.Singleton\DesignPatterns.Singleton.csproj" />
     <ProjectReference Include="..\DesignPatterns.State\DesignPatterns.State.csproj" />
     <ProjectReference Include="..\DesignPatterns.Strategy\DesignPatterns.Strategy.csproj" />
