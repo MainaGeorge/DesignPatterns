@@ -19,22 +19,22 @@ All design patterns can be categorized by their intent, or purpose into three ma
   * Proxy Pattern
 
 **Behavioural Design Patterns**
-*Chain of responsibility
-*Command
-*Iterator
-*Mediator
-*Memento
-*Null Object
-*Observer
-*State
-*Strategy
-*Template method
-*Visitor
+  * Chain of responsibility
+  * Command
+  * Iterator
+  * Mediator
+  * Memento
+  * Null Object
+  * Observer
+  * State
+  * Strategy
+  * Template method
+  * Visitor
 
 **Creational Desing Patterns**
-*Abstract Factory
-*Builder
-*Factory Method
-*Object Pool
-*Prototype
-*Singleton
+  * Abstract Factory
+  * Builder
+  * Factory Method
+  * Object Pool
+  * Prototype
+  * Singleton
