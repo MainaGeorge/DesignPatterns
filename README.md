@@ -10,13 +10,13 @@ All design patterns can be categorized by their intent, or purpose into three ma
    * **Behavioral patterns** take care of effective communication and the assignment of responsibilities between objects.
    
 **Structural Design Patterns**
-*Adapter Pattern
-*Bridge Pattern
-*Composite Pattern
-*Decorator Pattern
-*Facade Pattern
-*Flyweight Pattern
-*Proxy Pattern
+  * Adapter Pattern
+  * Bridge Pattern
+  * Composite Pattern
+  * Decorator Pattern
+  * Facade Pattern
+  * Flyweight Pattern
+  * Proxy Pattern
 
 **Behavioural Design Patterns**
 *Chain of responsibility
