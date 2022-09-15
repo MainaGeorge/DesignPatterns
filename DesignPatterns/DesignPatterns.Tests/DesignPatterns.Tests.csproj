@@ -30,6 +30,7 @@
     <ProjectReference Include="..\DesignPatterns.Composite\DesignPatterns.Composite.csproj" />
     <ProjectReference Include="..\DesignPatterns.Decorator\DesignPatterns.Decorator.csproj" />
     <ProjectReference Include="..\DesignPatterns.Facade\DesignPatterns.Facade.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Factory\DesignPatterns.Factory.csproj" />
     <ProjectReference Include="..\DesignPatterns.Flyweight\DesignPatterns.Flyweight.csproj" />
     <ProjectReference Include="..\DesignPatterns.Iterator\DesignPatterns.Iterator.csproj" />
     <ProjectReference Include="..\DesignPatterns.Mediator\DesignPatterns.Mediator.csproj" />
