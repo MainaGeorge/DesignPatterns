@@ -23,6 +23,9 @@
         }
 
         public int GetNumberOfHandlersRun => _tracer.HistoryCount;
-        public List<string> GetRunHandlers() => _tracer.GetHistory();
+        public List<string> GetRunHandlers()
+        {
+            return _tracer.GetHistory();
+        }
     }
 }

@@ -1,8 +1,8 @@
 ﻿namespace DesignPatterns.Command;
 
-public class WithdrawCommand :BaseAccountCommand, ICommand
+public class WithdrawCommand : BaseAccountCommand, ICommand
 {
-    public WithdrawCommand(IAccount account, int amount): base(account, amount) {}
+    public WithdrawCommand(IAccount account, int amount) : base(account, amount) { }
     public void Execute()
     {
         if (Account.Balance <= 0)

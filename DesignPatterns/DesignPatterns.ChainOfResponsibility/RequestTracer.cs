@@ -7,9 +7,20 @@
         public static RequestTracer Instance => _tracer;
 
         private RequestTracer() { }
-        public void AddToHistory(string trace) => _requestTrace.Push(trace);
-        public List<string> GetHistory() => _requestTrace.ToList();
+        public void AddToHistory(string trace)
+        {
+            _requestTrace.Push(trace);
+        }
+
+        public List<string> GetHistory()
+        {
+            return _requestTrace.ToList();
+        }
+
         public int HistoryCount => _requestTrace.Count;
-        public void ResetStackWithHistory() => _requestTrace = new Stack<string>();
+        public void ResetStackWithHistory()
+        {
+            _requestTrace = new Stack<string>();
+        }
     }
 }

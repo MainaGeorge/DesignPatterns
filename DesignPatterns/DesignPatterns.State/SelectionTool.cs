@@ -2,6 +2,13 @@
 
 public class SelectionTool : ITool
 {
-    public string MouseUp() => "stopped selection of content";
-    public string MouseDown() => "started selection of content";
+    public string MouseUp()
+    {
+        return "stopped selection of content";
+    }
+
+    public string MouseDown()
+    {
+        return "started selection of content";
+    }
 }

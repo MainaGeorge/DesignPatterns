@@ -1,8 +1,8 @@
 ﻿namespace DesignPatterns.Adapter;
 
-public interface IAdapterInterface 
+public interface IAdapterInterface
 {
-    ThirdPartyCostEstimator ThirdPartyCostEstimator { get;  }
+    ThirdPartyCostEstimator ThirdPartyCostEstimator { get; }
     double Estimate(double amountPerPerson, int numberOfRegisteredPeople);
 
 }

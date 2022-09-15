@@ -13,7 +13,14 @@
         public string UserName { get; set; }
         public string Password { get; set; }
 
-        public bool ContainsHeader(string header) => _headers.Contains(header);
-        public void AddHeader(string header) => _headers.Add(header);
+        public bool ContainsHeader(string header)
+        {
+            return _headers.Contains(header);
+        }
+
+        public void AddHeader(string header)
+        {
+            _headers.Add(header);
+        }
     }
 }

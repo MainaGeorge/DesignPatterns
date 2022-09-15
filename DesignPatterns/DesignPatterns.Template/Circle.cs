@@ -2,7 +2,7 @@
 
 public class Circle : Shape
 {
-    public Circle(int brushSize, string color): base(brushSize, color)
+    public Circle(int brushSize, string color) : base(brushSize, color)
     {
     }
 

@@ -8,7 +8,14 @@
             _tool = tool;
         }
 
-        public string MouseUp() => _tool.MouseUp();
-        public string MouseDown() => _tool.MouseDown();
+        public string MouseUp()
+        {
+            return _tool.MouseUp();
+        }
+
+        public string MouseDown()
+        {
+            return _tool.MouseDown();
+        }
     }
 }

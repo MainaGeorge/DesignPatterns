@@ -4,7 +4,7 @@
     {
         protected int BrushSize { get; set; } = 2;
         protected string Color { get; set; } = "black";
-        
+
         protected Shape()
         {
         }

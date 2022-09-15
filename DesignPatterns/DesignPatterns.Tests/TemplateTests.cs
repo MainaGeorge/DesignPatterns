@@ -16,12 +16,13 @@ namespace DesignPatterns.Tests
 
             Assert.Contains(color, drawnSquare);
             Assert.Contains(color, drawnCircle);
-            
+
         }
 
         [Theory]
         [InlineData(2)]
-        public void Template_CorrectlySetsBrushSize(int brushSize){
+        public void Template_CorrectlySetsBrushSize(int brushSize)
+        {
             var circle = new Circle();
             var square = new Square();
 

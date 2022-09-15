@@ -2,7 +2,14 @@
 {
     public class DeletionTool : ITool
     {
-        public string MouseUp() => "completed deletion selected content";
-        public string MouseDown() => "started deletion of content";
+        public string MouseUp()
+        {
+            return "completed deletion selected content";
+        }
+
+        public string MouseDown()
+        {
+            return "started deletion of content";
+        }
     }
 }

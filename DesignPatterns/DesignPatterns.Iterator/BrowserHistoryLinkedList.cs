@@ -3,7 +3,11 @@
 public class BrowserHistoryLinkedList
 {
     private readonly LinkedList<string> _history = new();
-    public void Push(string url) => _history.AddLast(url);
+    public void Push(string url)
+    {
+        _history.AddLast(url);
+    }
+
     public string Pop()
     {
         if (_history.Count < 1)
@@ -12,11 +16,15 @@ public class BrowserHistoryLinkedList
         _history.RemoveLast();
         return lastItem!;
     }
-    public BrowserHistoryLinkedListIterator GetIterator() => new(this);
+    public BrowserHistoryLinkedListIterator GetIterator()
+    {
+        return new(this);
+    }
+
     public class BrowserHistoryLinkedListIterator : IIterator<string>
     {
         private readonly BrowserHistoryLinkedList _browserBrowserHistoryLinkedList;
-        
+
 
         public BrowserHistoryLinkedListIterator(BrowserHistoryLinkedList browserBrowserHistoryLinkedList)
         {

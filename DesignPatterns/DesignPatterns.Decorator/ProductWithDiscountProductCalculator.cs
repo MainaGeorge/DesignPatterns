@@ -12,6 +12,6 @@ public class ProductWithDiscountProductCalculator : ICalculateCost
     }
     public decimal GetCost()
     {
-        return 0.01M * (100 - _discountPercentage ) * _productCostCalculator.GetCost();
+        return 0.01M * (100 - _discountPercentage) * _productCostCalculator.GetCost();
     }
 }

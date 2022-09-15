@@ -9,7 +9,7 @@ public class Group : IDrawable
 
     public void AddDrawableObject(IDrawable drawable)
     {
-        if(drawable != this)
+        if (drawable != this)
             DrawableObjects.Add(drawable);
     }
     public string Draw()

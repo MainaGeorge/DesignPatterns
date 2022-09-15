@@ -2,5 +2,8 @@
 
 public class HighContrastImageFilter : IImageFilter
 {
-    public string ApplyFilter(string filename) => "applied high contrast filter";
+    public string ApplyFilter(string filename)
+    {
+        return "applied high contrast filter";
+    }
 }

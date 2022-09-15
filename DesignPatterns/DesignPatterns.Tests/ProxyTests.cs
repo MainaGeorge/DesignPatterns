@@ -1,5 +1,4 @@
 ﻿using DesignPatterns.Proxy;
-using System.Runtime.CompilerServices;
 
 namespace DesignPatterns.Tests
 {

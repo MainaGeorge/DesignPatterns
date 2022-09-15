@@ -9,7 +9,14 @@
             DeviceSoftware = deviceSoftware;
         }
 
-        public string PowerOff() => DeviceSoftware.PowerOff();
-        public string PowerOn() => DeviceSoftware.PowerOn();
+        public string PowerOff()
+        {
+            return DeviceSoftware.PowerOff();
+        }
+
+        public string PowerOn()
+        {
+            return DeviceSoftware.PowerOn();
+        }
     }
 }

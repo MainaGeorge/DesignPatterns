@@ -4,6 +4,9 @@
     {
         private static readonly Random _random = new Random();
 
-        public static int GetNewPrice() => _random.Next(100_000, 500_000);
+        public static int GetNewPrice()
+        {
+            return _random.Next(100_000, 500_000);
+        }
     }
 }

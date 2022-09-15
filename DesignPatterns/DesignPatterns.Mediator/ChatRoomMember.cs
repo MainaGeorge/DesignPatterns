@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Mediator;
 
-public abstract class ChatRoomMember 
+public abstract class ChatRoomMember
 {
     protected string Name { get; set; }
     private readonly ChatRoom _chatRoom;

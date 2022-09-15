@@ -8,6 +8,8 @@ public class ProductCostCalculator : ICalculateCost
     {
         _products = products;
     }
-    public decimal GetCost() => _products.Sum( p => p.Price);
-
+    public decimal GetCost()
+    {
+        return _products.Sum(p => p.Price);
+    }
 }

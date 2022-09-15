@@ -2,5 +2,8 @@
 
 public class BlackAndWhiteImageFilter : IImageFilter
 {
-    public string ApplyFilter(string filename) => "applied black and white filter";
+    public string ApplyFilter(string filename)
+    {
+        return "applied black and white filter";
+    }
 }

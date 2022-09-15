@@ -2,14 +2,17 @@
 {
     public class ThirdPartyCostEstimator
     {
-        public  int NumberOfInvestors { get; }
-        public double AmountInvestedPerInvestor { get;}
+        public int NumberOfInvestors { get; }
+        public double AmountInvestedPerInvestor { get; }
 
         public ThirdPartyCostEstimator(int numberOfInvestors, double amountInvestedPerInvestor)
         {
             NumberOfInvestors = numberOfInvestors;
             AmountInvestedPerInvestor = amountInvestedPerInvestor;
         }
-        public double ExecuteEstimation() => AmountInvestedPerInvestor * NumberOfInvestors;
+        public double ExecuteEstimation()
+        {
+            return AmountInvestedPerInvestor * NumberOfInvestors;
+        }
     }
 }

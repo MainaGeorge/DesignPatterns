@@ -4,7 +4,10 @@ public class BrowserHistoryList
 {
     private readonly List<string> _visitedUrls = new();
 
-    public void Push(string url) => _visitedUrls.Add(url);
+    public void Push(string url)
+    {
+        _visitedUrls.Add(url);
+    }
 
     public string Pop()
     {
@@ -15,7 +18,10 @@ public class BrowserHistoryList
         return lastItem;
     }
 
-    public BrowserHistoryListIterator GetIterator() => new(this);
+    public BrowserHistoryListIterator GetIterator()
+    {
+        return new(this);
+    }
 
     public class BrowserHistoryListIterator : IIterator<string>
     {
@@ -26,11 +32,19 @@ public class BrowserHistoryList
         {
             _historyList = historyList;
         }
-        public string Current() => _historyList._visitedUrls[_index];
+        public string Current()
+        {
+            return _historyList._visitedUrls[_index];
+        }
 
-        public void MoveNext() => _index++;
-        
-        public bool HasNext() => _index < _historyList._visitedUrls.Count;
+        public void MoveNext()
+        {
+            _index++;
+        }
 
+        public bool HasNext()
+        {
+            return _index < _historyList._visitedUrls.Count;
+        }
     }
 }

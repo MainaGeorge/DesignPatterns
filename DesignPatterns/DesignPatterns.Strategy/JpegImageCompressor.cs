@@ -2,5 +2,8 @@
 
 public class JpegImageCompressor : IImageCompressor
 {
-    public string Compress(string filename) => "compressed image using JPEG algorithm";
+    public string Compress(string filename)
+    {
+        return "compressed image using JPEG algorithm";
+    }
 }

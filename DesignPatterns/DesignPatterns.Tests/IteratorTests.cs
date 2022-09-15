@@ -14,7 +14,7 @@ namespace DesignPatterns.Tests
             browserHistory.Push(site2);
             browserHistory.Push(site3);
 
-            var expectedVisitedSites = new List<string>{ site1, site2, site3 };
+            var expectedVisitedSites = new List<string> { site1, site2, site3 };
             var actualVisitedSites = new List<string>();
 
 

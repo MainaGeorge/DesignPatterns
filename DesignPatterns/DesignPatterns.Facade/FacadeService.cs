@@ -4,7 +4,7 @@ public class FacadeService : IFacade
 {
     private readonly IServer _server = new Server();
     private readonly IAuthenticator _authenticator = new Authenticator();
-    
+
     public string ReadData(string username, string password, string connectionString)
     {
         try

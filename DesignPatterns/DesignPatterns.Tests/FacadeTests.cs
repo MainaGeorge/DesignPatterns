@@ -16,7 +16,7 @@ namespace DesignPatterns.Tests
             Assert.Equal(expectedData, data);
 
             var error = Assert.Throws<InvalidOperationException>(() => facade.ReadData("admin", "passw0rd1", "connectionString"));
-            Assert.Equal(expectedAuthenticationErrorMessage,error.Message);
+            Assert.Equal(expectedAuthenticationErrorMessage, error.Message);
         }
     }
 }

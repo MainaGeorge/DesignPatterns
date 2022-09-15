@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.Tests
 {
-    public  class MediatorTests
+    public class MediatorTests
     {
         [Fact]
         public void Mediator_SetUpWorksCorrectly()

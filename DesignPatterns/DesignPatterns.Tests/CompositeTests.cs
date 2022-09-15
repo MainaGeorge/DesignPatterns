@@ -12,7 +12,7 @@ namespace DesignPatterns.Tests
             var circle3 = new Circle();
             var square = new Square();
             var square2 = new Square();
-            
+
 
             var group = new Group();
             group.AddDrawableObject(circle);
