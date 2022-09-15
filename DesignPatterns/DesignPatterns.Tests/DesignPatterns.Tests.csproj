@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.AbstractFactory\DesignPatterns.AbstractFactory.csproj" />
     <ProjectReference Include="..\DesignPatterns.Adapter\DesignPatterns.Adapter.csproj" />
     <ProjectReference Include="..\DesignPatterns.Bridge\DesignPatterns.Bridge.csproj" />
     <ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.Builder.csproj" />
